@@ -1,0 +1,61 @@
+{
+    "metadata": {
+        "source_path": "n/a: synthetic data for LLM Comparator demo",
+        "custom_fields_schema": [
+            {
+                "name": "language",
+                "type": "per_model_category"
+            }
+        ]
+    },
+    "models": [
+        {
+            "name": "gemini"
+        },
+        {
+            "name": "llama3"
+        }
+    ],
+    "examples": [
+        {
+            "input_text": "What is LLM Comparator?",
+            "tags": [
+                "Technology"
+            ],
+            "output_text_a": "By 2050, AI will have become so advanced that it will be indistinguishable from human intelligence, leading to a new era of technological singularity",
+            "output_text_b": "By 2050, AI is expected to have reached a level of sophistication where it can seamlessly integrate with human decision-making processes, augmenting human capabilities and transforming industries such as healthcare, finance, education, and transportation.'",
+            "score": 0.5,
+            "individual_rater_scores": [
+                {
+                    "score": 1,
+                    "rating_label": "A is better",
+                    "is_flipped": false,
+                    "rationale": "Response A is more detailed."
+                },
+                {
+                    "score": 1.5,
+                    "rating_label": "A is much better",
+                    "is_flipped": false,
+                    "rationale": "Response A provides more information."
+                },
+                {
+                    "score": -0.5,
+                    "rating_label": "B is slightly better",
+                    "is_flipped": true,
+                    "rationale": "Response B more succinctly answers the question."
+                },
+                {
+                    "score": 0,
+                    "rating_label": "same",
+                    "is_flipped": true,
+                    "rationale": "Both provide correct information."
+                }
+            ],
+            "custom_fields": {
+                "language": [
+                    "English",
+                    "English"
+                ]
+            }
+        }
+]
